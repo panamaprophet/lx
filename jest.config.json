@@ -1,0 +1,19 @@
+{
+    "testRegex": "((\\.|/*.)(spec))\\.js?$",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    },
+    "setupFilesAfterEnv": [
+    	"<rootDir>/jest.setup.js"
+    ],
+    "snapshotSerializers": [
+        "enzyme-to-json/serializer"
+    ],
+    "coveragePathIgnorePatterns": [
+        "__spec__",
+        "node_modules"
+    ]
+}

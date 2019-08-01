@@ -1,0 +1,25 @@
+.root {
+    display: flex; 
+    padding: 0;
+    list-style: none;
+
+    & .root {
+        flex-flow: column;
+    }
+}
+
+.position_type_fixed {
+    position: fixed;
+}
+
+.position_type_absolute {
+    position: absolute;
+}
+
+.position_type_relative {
+    position: relative;
+}
+
+.position_type_static {
+    position: static;
+}

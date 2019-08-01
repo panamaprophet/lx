@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Item component renders with active submenu 1`] = `
+<li
+  className="root isActive"
+>
+  <div
+    className="title"
+    onClick={[Function]}
+  >
+    clouds
+  </div>
+  <SubMenuComponent
+    items={
+      Array [
+        Object {
+          "id": 4,
+          "name": "space",
+        },
+        Object {
+          "id": 2,
+          "name": "galaxy",
+        },
+        Object {
+          "id": 0,
+          "name": "universe",
+        },
+      ]
+    }
+  />
+</li>
+`;
+
+exports[`Menu Item component renders with one-level menu 1`] = `
+<li
+  className="root"
+>
+  <div
+    className="title"
+    onClick={[Function]}
+  >
+    clouds
+  </div>
+</li>
+`;

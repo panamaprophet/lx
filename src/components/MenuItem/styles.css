@@ -1,0 +1,20 @@
+.root {
+    background: #009688;
+}
+
+.isActive > .title {
+    background: #ffeb3b;
+}
+
+.title {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.collapsed {
+    display: none;
+}
+
+.expanded {
+    display: initial;
+}
