@@ -27,14 +27,15 @@ export const useOutsideClickEffect =
             return () => { 
                 document.removeEventListener('click', onClickOutside); 
             }
-        });
+        }, []);
     };
 
 export const useGetDataFromRestApiEffect = 
     (url, setData) => useEffect(() => {
         fetch(url)
+            // .then(response => response.statusCode === 302 ... )
             .then(response => response.json())
             .then(normalizeData)
             .then(data => setData(data))
             .catch(error => console.log(error));
-    });
+    }, []);
