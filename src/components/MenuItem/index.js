@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import styles from './styles.css';
@@ -22,3 +23,12 @@ const MenuItem = ({
 );
 
 export default MenuItem;
+
+MenuItem.propTypes = {
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    items: PropTypes.arrayOf(PropTypes.object),
+    isActive: PropTypes.bool,
+    onClick: PropTypes.func,
+    SubMenuComponent: PropTypes.elementType,
+};
